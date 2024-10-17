@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About GAN Model</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/pneumonia-detection">Pneumonia Detection</a></li>
+                <li><a href="/gan-model">GAN Model</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Header Section -->
+        <section class="header-section">
+            <h1>Generative Adversarial Network (GAN)</h1>
+            <img src="{{ url_for('static', filename='images/gan overview.png') }}" alt="GAN Overview" class="header-image">
+        </section>
+
+        <!-- Information Section -->
+        <section class="info-section">
+            <h2>Overview</h2>
+            <p>
+                A Generative Adversarial Network (GAN) is a deep learning framework that consists of two neural networks, 
+                the generator and the discriminator, which compete against each other to produce synthetic data 
+                that resembles real data.
+            </p>
+            
+            <h3>How GANs Work</h3>
+            <p>
+                The generator creates fake data while the discriminator evaluates it. The generator aims to produce data 
+                indistinguishable from real data, while the discriminator aims to correctly classify data as real or fake. 
+                This adversarial process enhances the generator's output over time.
+            </p>
+
+            <h3>Applications of GANs</h3>
+            <ul>
+                <li>Image Generation</li>
+                <li>Image Super-Resolution</li>
+                <li>Data Augmentation</li>
+                <li>Video Generation</li>
+                <li>Text to Image Synthesis</li>
+            </ul>
+
+            <h3>Conclusion</h3>
+            <p>
+                GANs have transformed machine learning by enabling the creation of high-quality synthetic data used in various 
+                applications, from art creation to scientific simulations.
+            </p>
+        </section>
+
+        <!-- Link to Another Page (Detection Page) -->
+        <section class="navigation-section">
+            <p>Want to check a pneumonia X-ray?</p>
+            <a href="/pneumonia-detection" class="button">Go to Detection Page</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 GAN Model Overview</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

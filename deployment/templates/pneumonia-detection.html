@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pneumonia Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+ <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/pneumonia-detection">Pneumonia Detection</a></li>
+                <li><a href="/gan-model">GAN Model</a></li>
+            </ul>
+        </nav>
+    </header>
+<body>
+    <div class="container">
+        <header>
+            <h1>Chest X-ray Pneumonia Detection</h1>
+            <p>Upload a chest X-ray image to detect pneumonia.</p>
+        </header>
+
+        <section class="upload-section">
+            <form id="upload-form" enctype="multipart/form-data">
+                <label for="file-upload" class="custom-file-upload">
+                    Upload Chest X-ray
+                </label>
+                <input id="file-upload" type="file" name="file" accept="image/*" required>
+
+                {# <img src="{{ url_for('static', filename='images/sampleX_ray.png') }}" alt="Sample X-ray" /> #}
+
+            </form>
+        </section>
+
+        <section id="result-section" class="hidden">
+            <h2>Diagnosis Result</h2>
+            <p id="diagnosis"></p>
+            <p id="confidence-section" class="hidden">Confidence: <span id="confidence"></span></p>
+            <img id="uploaded-image" alt="Uploaded X-ray" class="hidden" src="{{ url_for('static', filename='images/sampleX_ray.png') }}"/>
+        </section>
+
+       
+    </div>
+    <footer>
+        <p>&copy; 2024 Pneumonia Detection</p>
+    </footer>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

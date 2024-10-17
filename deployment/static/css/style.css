@@ -1,0 +1,143 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #007bff;
+    padding: 15px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    /* Align items to the left */
+}
+
+.navbar ul li {
+    margin-right: 1cm;
+    /* Adds 1 cm space between list items */
+}
+
+.navbar ul li:first-child {
+    margin-left: 1cm;
+    /* Adds space before the first item (Home) */
+}
+
+.navbar ul li:last-child {
+    margin-right: 0;
+    /* Remove margin on the last item */
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Header Section */
+.header-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+h1 {
+    color: #007bff;
+    margin-top: 20px;
+}
+
+/* Information Section */
+.info-section h2,
+.info-section h3 {
+    color: #007bff;
+}
+
+.info-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.info-image {
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+ul {
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+/* Upload Section */
+.upload-section {
+    text-align: center;
+    margin: 30px 0;
+    margin-right: 1cm;
+}
+
+.custom-file-upload {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 1cm;
+}
+
+.custom-file-upload:hover {
+    background-color: #0056b3;
+}
+
+.upload-image {
+    margin-top: 20px;
+    width: 20%;
+    height: 20%;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #007bff;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Button */
+.button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #218838;
+}

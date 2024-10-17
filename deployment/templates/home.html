@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Pneumonia</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"></head></head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/pneumonia-detection">Pneumonia Detection</a></li>
+                <li><a href="/gan-model">GAN Model</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Header Section -->
+        <section class="header-section">
+            <img src="{{ url_for('static', filename='images/pneumonia_overview.png') }}" alt="Pneumonia Overview" class="header-image">
+            <h1>What is Pneumonia?</h1>
+        </section>
+
+        <!-- Information Section -->
+        <section class="info-section">
+            <h2>Overview</h2>
+            <p>
+                Pneumonia is an infection that inflames the air sacs in one or both lungs.
+                It can be caused by bacteria, viruses, or fungi.
+            </p>
+            
+            <h3>Symptoms</h3>
+            <ul>
+                <li>Cough with mucus or phlegm</li>
+                <li>Fever, sweating, and shaking chills</li>
+                <li>Shortness of breath</li>
+                <li>Fatigue and muscle pain</li>
+            </ul>
+            
+            <h3>Causes</h3>
+            <p>
+                Common causes of pneumonia include bacterial infections like *Streptococcus pneumoniae* and viral infections like the flu.
+            </p>
+
+            <img src="{{ url_for('static', filename='images/lung_infection.png') }}" alt="Lung Infection" class="info-image">
+
+            <h3>Diagnosis</h3>
+            <p>
+                A chest X-ray is commonly used for diagnosing pneumonia. 
+                Early detection and treatment can prevent severe complications.
+            </p>
+        </section>
+
+        <!-- Link to Second Page (Detection Page) -->
+        <section class="navigation-section">
+            <p>Ready to check an X-ray for pneumonia?</p>
+            <a href="/pneumonia-detection" class="button">Go to Detection Page</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Pneumonia Detection</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
