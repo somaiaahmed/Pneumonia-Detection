@@ -117,6 +117,29 @@ ul {
     height: 20%;
     border-radius: 8px;
 }
+.diagnosis {
+    font-size: 2em;
+    /* Large font size for diagnosis */
+    font-weight: bold;
+    /* Bold text for emphasis */
+    margin-bottom: 20px;
+}
+
+.confidence-section {
+    font-size: 1.5em;
+    /* Slightly smaller than diagnosis */
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.uploaded-image {
+    display: block;
+    max-width: 400px;
+    /* You can adjust this to a fixed width */
+    height: auto;
+    margin: 20px auto;
+    /* Center the image */
+}
 
 /* Footer */
 footer {
